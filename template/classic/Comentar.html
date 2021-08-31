@@ -364,7 +364,7 @@
                     <button class="btn btn-white pd-lg-4"><i class="fas fa-address-card mg-r-8"></i>10</button>
                     <button class="btn btn-white pd-lg-4 mg-l-8"><i data-feather="smile" class=" mg-r-8"></i>23</button>
                   </div><!-- media -->
-                <h6 class="mg-t-20"><a href="Comentar.html">Lihat Komentar (1)</a></h6>
+                <h6 class="mg-t-20"><a href="">Lihat Komentar (1)</a></h6>
                 <div class="mg-b-25" style="border-top: 1px solid #b2bec3;">
                 </div>
                 <div class="media align-items-center mg-b-15">
@@ -376,8 +376,43 @@
                   </div><!-- media -->
                   <p class="mg-b-5">kurang tau sih</p>
                    <div class="mg-b-25" style="border-top: 1px solid #b2bec3;"></div>
-                   <h6 class="mg-t-15 " style="text-align:center;">Muat Jawaban Lain (15)</h6>
-              </div>
+                    <div id="accordion">
+                     <h6 style="text-align:center;"><a style="color:black;" class="collapsed card-link" data-toggle="collapse" href="#collapseTiga">
+                         Muat Jawaban Lain (15)
+                     </a></h6>
+                      <div id="collapseTiga" class="collapse" data-parent="#accordion">
+                          <div class="media align-items-center mg-b-15">
+                            <div class="avatar avatar-online">
+                              <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
+                            </div>
+                              <div class="media-body pd-l-15">
+                                <h6 class="mg-b-3">Dyanne Aceron</h6>
+                                <span class="d-block tx-13 tx-color-03">Cigarette Butt Collector</span>
+                              </div>
+                            </div>
+                            <p class="mg-b-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur odit nobis temporibus pariatur aliquam velit a adipisci dicta sed, ex fugit maiores. Sit maxime saepe, deserunt quam eos non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia deserunt mollitia, corrupti consectetur veniam tempore necessitatibus! Molestias asperiores fuga, iusto nemo expedita corporis, ipsum repudiandae cupiditate aspernatur recusandae ex. Voluptas! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis expedita commodi alias nulla possimus odit dolorem quisquam error, sequi minus incidunt accusantium! Cupiditate nobis sapiente perspiciatis dolorum corrupti dicta sint!</p>
+                        </div>
+                    </div>
+                    <div id="accordion">
+                     <h6 class="mg-t-15"><a style="border-bottom: 1px solid #b2bec3;" class="collapsed card-link btn btn-white" data-toggle="collapse" href="#collapseDua">
+                         Tulis Komentar
+                     </a></h6>
+                      <div id="collapseDua" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                          <div class="media align-items-center mg-b-15">
+                            <div class="avatar avatar-online">
+                              <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
+                            </div>
+                              <div class="media-body pd-l-15">
+                                  <!-- <label class="tx-10 tx-uppercase tx-medium tx-spacing-1 mg-b-5 tx-color-03">Name on Card</label> -->
+                                  <textarea id="summernote" name="content" ></textarea>
+                              </div> 
+                              <button class="btn btn-primary pd-lg-10 mg-l-5"><i data-feather="share-2"></i></button>
+                            </div>
+                          </div><!-- media -->
+                        </div>
+                    </div>
+                </div>
             </div><!-- card -->
             <div class="modal fade" id="modalBillingInfo" tabindex="-1" role="dialog" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered wd-sm-950" role="document">
@@ -433,7 +468,6 @@
                 </div><!-- modal-content -->
               </div><!-- modal-dialog -->
             </div><!-- modal -->
-
           </div><!-- media-body -->
         </div><!-- media -->
       </div><!-- container -->
@@ -505,6 +539,7 @@
           styleWithSpan: false,
           
         });
+        
       }); 
     </script>
   </body>
