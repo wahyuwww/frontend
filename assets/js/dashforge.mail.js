@@ -43,7 +43,14 @@ $(function(){
     modules: {
       toolbar: '#toolbar-container'
     },
-    placeholder: 'Compose an epic...',
+    placeholder: 'Silahkan ketik...',
+    theme: 'snow'
+  });
+  var quill = new Quill('#editor-container-3', {
+    modules: {
+      toolbar: '#toolbar-container-3'
+    },
+    placeholder: 'Silahkan ketik...',
     theme: 'snow'
   });
 
