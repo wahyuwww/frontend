@@ -293,14 +293,38 @@
 
       <div class="filemgr-content">
         <div class="filemgr-content-header">
-          <i data-feather="search"></i>
-          <div class="search-form">
-            <input type="search" class="form-control" placeholder="Search for files and folders">
-          </div><!-- search-form -->
-          <nav class="nav d-none d-sm-flex mg-l-auto">
-            <a href="" class="nav-link"><i data-feather="list"></i></a>
-            <a href="" class="nav-link"><i data-feather="alert-circle"></i></a>
-            <a href="" class="nav-link"><i data-feather="settings"></i></a>
+          <label class="tx-sans tx-20  tx-color-01 mg-b-5 mg-r-5">Kategori</label>
+          <div class="col-sm-4">
+                 <div class="dropdown dropdown-icon flex-fill">
+                      <button class="btn btn-xs btn-block btn-white" data-toggle="dropdown">Kategori <i data-feather="chevron-down"></i></button>
+                    <div class="dropdown-menu tx-15">
+                        <a href="" class="dropdown-item active"><i data-feather="folder"></i><span>Pembangkit</span></a>
+                        <a href="" class="dropdown-item "><i data-feather="file"></i><span>Pendidikan</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item"><i data-feather="file-text"></i><span>Transmisi</span></a>
+                        <a href="" class="dropdown-item"><i data-feather="file-text"></i><span>Distribusi</span></a>
+                        <a href="" class="dropdown-item"><i data-feather="file-text"></i><span>Excel Spreadsheet</span></a>
+                      </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+          </div>
+          <nav class="nav mg-l-auto">
+           <ul class="nav nav-line ml-auto" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Terbaru</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Minggu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Bulan</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Tahun</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Top</a>
+                </li>
+              </ul>
           </nav>
         </div><!-- filemgr-content-header -->
         <div class="filemgr-content-body">

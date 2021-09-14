@@ -181,6 +181,31 @@
   left: 0;
   right: 0;
   bottom: 0; }
+@media screen and (max-width: 1000px) {
+  .nontombol {
+    padding: 5px;
+  }
+  .tombol{
+    padding: 3px;
+    margin-right: -15px;
+  }
+  .create{
+    padding: 5px;
+  }
+  .colom{
+    padding: 4px;
+  }
+  .detail{
+    padding: 25px;
+  }
+  .dibagikan{
+    padding: 6px;
+    background-color: cornflowerblue;
+  }
+  .area{
+    margin-left: -5px;
+  }
+}
 
 .mail-compose {
   position: fixed;
