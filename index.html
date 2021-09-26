@@ -30,7 +30,7 @@
     <meta name="author" content="ThemePixels">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/pln.png">
 
     <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
 
@@ -40,74 +40,297 @@
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="assets/css/dashforge.css">
-    <link rel="stylesheet" href="assets/css/dashforge.landing.css">
-
+    <link rel="stylesheet" href="assets/css/dashforge.profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
   </head>
-  <body class="home-body">
+  <body class="page-profile">
 
-    <header class="navbar navbar-header navbar-header-fixed bd-b-0">
-      <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
+  <header class="navbar navbar-header navbar-header-fixed">
+      <a href="" id="mainMenuOpen" class="burger-menu d-none d-md-flex d-lg-none"><i data-feather="menu"></i></a>
+      <a href="" id="mailSidebar" class="burger-menu d-md-none"><i data-feather="arrow-left"></i></a>
       <div class="navbar-brand">
-        <a href="../index.html" class="df-logo">dash<span>forge</span></a>
+        <img src="assets/img/pln.png" alt="logo pln" width="66" height="30" class="brand-image elevation-3" style="opacity: .8">
       </div><!-- navbar-brand -->
       <div id="navbarMenu" class="navbar-menu-wrapper">
         <div class="navbar-menu-header">
-          <a href="../index.html" class="df-logo">dash<span>forge</span></a>
+          <a href="index.html" class="df-logo">dash<span>forge</span></a>
           <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
         </div><!-- navbar-menu-header -->
         <ul class="nav navbar-menu">
-          <li class="nav-item">  <a href="template/classic/app-mail.html" class="nav-link"><i data-feather="package"></i> Opsi K-2</a></li>          
-          <li class="nav-item"><a  href="template/classic/page-profile-view.html" class="nav-link"><i data-feather="layers"></i> Opsi K-1</a></li>
+          <li class="nav-label pd-l-20 pd-lg-l-25 d-lg-none">Main Navigation</li>
+          <li class="nav-item with-sub">
+          <li class="nav-item"><a  href="index.html" class="nav-link"><i data-feather="layers"></i>Q&A</a></li>
+            </ul>
+          </li>
+         
         </ul>
       </div><!-- navbar-menu-wrapper -->
       <div class="navbar-right">
-        <a href="http://dribbble.com/themepixels" class="btn btn-social"><i class="fab fa-dribbble"></i></a>
-        <a href="https://github.com/themepixels" class="btn btn-social"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/themepixels" class="btn btn-social"><i class="fab fa-twitter"></i></a>
-        <a href="https://themeforest.net/item/dashforge-responsive-admin-dashboard-template/23725961" class="btn btn-buy"><i data-feather="shopping-bag"></i> <span>Buy Now</span></a>
+ <button  href="#modalBillingpertanyaan" data-toggle="modal" class="btn btn-block btn-info pd-lg-2 mg-l-10 pertanyaan">Tulis Pertanyaan</button>
+       
+        <div class="dropdown dropdown-notification">
+          <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
+            <i data-feather="bell"></i>
+            <span>2</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-header">Notifications</div>
+            <a href="" class="dropdown-item">
+              <div class="media">
+                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                <div class="media-body mg-l-15">
+                  <p>Congratulate <strong>Socrates Itumay</strong> for work anniversaries</p>
+                  <span>Mar 15 12:32pm</span>
+                </div><!-- media-body -->
+              </div><!-- media -->
+            </a>
+            <a href="" class="dropdown-item">
+              <div class="media">
+                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                <div class="media-body mg-l-15">
+                  <p><strong>Joyce Chua</strong> just created a new blog post</p>
+                  <span>Mar 13 04:16am</span>
+                </div><!-- media-body -->
+              </div><!-- media -->
+            </a>
+            <a href="" class="dropdown-item">
+              <div class="media">
+                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/600" class="rounded-circle" alt=""></div>
+                <div class="media-body mg-l-15">
+                  <p><strong>Althea Cabardo</strong> just created a new blog post</p>
+                  <span>Mar 13 02:56am</span>
+                </div><!-- media-body -->
+              </div><!-- media -->
+            </a>
+            <a href="" class="dropdown-item">
+              <div class="media">
+                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                <div class="media-body mg-l-15">
+                  <p><strong>Adrian Monino</strong> added new comment on your photo</p>
+                  <span>Mar 12 10:40pm</span>
+                </div><!-- media-body -->
+              </div><!-- media -->
+            </a>
+            <div class="dropdown-footer"><a href="">View all Notifications</a></div>
+          </div><!-- dropdown-menu -->
+        </div><!-- dropdown -->
+        <div class="dropdown dropdown-profile">
+          <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+            <div class="avatar avatar-sm"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+          </a><!-- dropdown-link -->
+          <div class="dropdown-menu dropdown-menu-right tx-13">
+            <div class="avatar avatar-lg mg-b-15"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+            <h6 class="tx-semibold mg-b-5">Katherine Pechon</h6>
+            <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
+
+            <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
+            <a href="page-profile-view.html" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+            <div class="dropdown-divider"></div>
+            <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
+          </div><!-- dropdown-menu -->
+        </div><!-- dropdown -->
       </div><!-- navbar-right -->
     </header><!-- navbar -->
 
-    <div class="home-slider">
-      <div class="home-lead">
-        <div class="df-logo-initial mg-b-15"><p>df</p></div>
-        <p class="home-text">Responsive Bootstrap 4 Dashboard Template</p>
+    <div class="content content-fixed content-profile">
+      <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+        <div class="media d-block d-lg-flex">
+          <div class="profile-sidebar pd-lg-r-25">
+            <div class="row">
+              <div class="col-sm-3 col-md-2 col-lg d-flex mg-b-25" >
+                <div class="avatar avatar-xl avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                <div class="col-sm-8 col-md-7 col-lg mg-t-20 mg-sm-t-0 mg-lg-t-25">
+                <h5 class="mg-b-2 tx-spacing--1">Fen Chiu Mao</h5>
+                <p class="tx-color-03">@fenchiumao</p>
+                </div>
+              </div><!-- col -->
+              <div class="col-sm-6 col-md-5 col-lg ">
+                <ul class="list-unstyled profile-info-list">
+                  <li><i data-feather="globe"></i> <button class="btn btn-primary flex-fill active" href="">Q&A</button></li>
+                  <li><i data-feather="users"></i> <button class="btn btn-white flex-fill" href="">Diskusi</button></li>
+                  <li><i data-feather="mail"></i> <button class="btn btn-white flex-fill" href="">Postingan</button></li>
+                </ul>
+              </div><!-- col -->
+              
+              <div class="col-sm-8 col-md-7 col-lg ">
+                  <label class="tx-sans tx-20  tx-color-01 mg-b-5 mg-r-15">Kategori</label>
+                 <div class="dropdown dropdown-icon flex-fill">
+                      <button class="btn btn-xs btn-block btn-white" data-toggle="dropdown">Kategori <i data-feather="chevron-down"></i></button>
+                    <div class="dropdown-menu tx-15">
+                        <a href="" class="dropdown-item active"><i data-feather="folder"></i><span>Pembangkit</span></a>
+                        <a href="" class="dropdown-item "><i data-feather="file"></i><span>Pendidikan</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item"><i data-feather="file-text"></i><span>Transmisi</span></a>
+                        <a href="" class="dropdown-item"><i data-feather="file-text"></i><span>Distribusi</span></a>
+                        <a href="" class="dropdown-item"><i data-feather="file-text"></i><span>Excel Spreadsheet</span></a>
+                      </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+              </div><!-- col -->
+          </div><!-- row -->
 
-        <h6 class="home-headline">Make your dashboard app more professional with this <span>super awesome</span> and <span>premium quality</span> dashboard design template.</h6>
+          </div><!-- profile-sidebar -->
+          <div class="media-body mg-t-40 mg-lg-t-0 pd-lg-x-10">
+            <div class="profile-update-option bg-white ht-50 d-flex justify-content-end mg-b-10 mg-lg-b-10 rounded">
+              <div class="d-flex align-items-center pd-x-10 mg-r-auto">
+                <h5 class="d-none d-sm-inline ">Q&A</h5>
+              </div>
+               <ul class="nav nav-line ml-auto" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" href="detail-qa.html" role="tab" aria-controls="home" aria-selected="true">Terbaru</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Minggu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Bulan</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Tahun</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Top</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card mg-b-20 mg-lg-b-25" >
+              <div class=" pd-10 pd-lg-10">
+                <div class="media align-items-center mg-b-20">
+                  <div class="avatar avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                  <div class="media-body pd-l-15">
+                    <h6 class="mg-b-3">Dyanne Aceron</h6>
+                    <span class="d-block tx-13 tx-color-03">Cigarette Butt Collector</span>
+                  </div>
+                  <button class="btn btn-white pd-lg-2 nontombol" href="">#Transmisi</button>
+                  <button class="btn btn-warning pd-lg-2 mg-l-5 tombol" href="">Terbuka</button>
+                </div><!-- media -->
+                <h4>Bagaimana menulis lorem yang benar?</h4>
+                <p class="mg-b-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis rerum quaerat culpa facilis praesentium illum doloribus quod a? A nam magnam officia vel enim consequuntur, impedit vero incidunt amet! <a  href="detail-qna.html">Baca Lebih Lanjut</a></p>
+              </div>
+              <div class="card-footer bg-transparent pd-y-5 pd-sm-y-15 pd-x-10 pd-sm-x-10 d-flex align-items-center justify-content-between">
+                <nav class="nav nav-with-icon tx-13">
+                   <button class="btn btn-white pd-lg-2 "><i data-feather="upload" class=" mg-r-2"></i>90<i class=" mg-l-2" data-feather="download"></i></button>
+                  <button class="btn btn-white pd-lg-2 mg-l-5"><i data-feather="message-square"></i>28</button>
+                </nav>
+                <nav class="nav nav-icon-only">
+                   <button  href="#modalBillingInfo" data-toggle="modal" class="btn btn-info pd-lg-4 mg-l-10 create"><i data-feather="plus"></i>Tulis Jawaban</button>
+                </nav>
+              </div><!-- card-footer -->
+            </div><!-- card -->
+            <div class="card mg-b-20 mg-lg-b-25" >
+              <div class=" pd-10 pd-lg-10">
+                <div class="media align-items-center mg-b-20">
+                  <div class="avatar avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                  <div class="media-body pd-l-15">
+                    <h6 class="mg-b-3">Dyanne Aceron</h6>
+                    <span class="d-block tx-13 tx-color-03">Cigarette Butt Collector</span>
+                  </div>
+                  <button class="btn btn-white pd-lg-2" href="">#Pembangkit</button>
+                  <button class="btn btn-secondary pd-lg-2 mg-l-5" href="">Tertutup</button>
+                </div><!-- media -->
+                <h4>Bagaimana menulis lorem yang benar?</h4>
+                <p class="mg-b-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis rerum quaerat culpa facilis praesentium illum doloribus quod a? A nam magnam officia vel enim consequuntur, impedit vero incidunt amet! <a  href="detail-qna.html">Baca Lebih Lanjut</a></p>
+              </div>
+              <div class="card-footer bg-transparent pd-y-5 pd-sm-y-15 pd-x-10 pd-sm-x-10 d-flex align-items-center justify-content-between">
+                <nav class="nav nav-with-icon tx-13">
+                   <button class="btn btn-white pd-lg-2 "><i data-feather="upload" class=" mg-r-2"></i>90<i class=" mg-l-2" data-feather="download"></i></button>
+                  <button class="btn btn-white pd-lg-2 mg-l-5"><i data-feather="message-square"></i>28</button>
+                </nav>
+                <nav class="nav nav-icon-only">
+                   <button  href="#modalBillingInfo" data-toggle="modal" class="btn btn-info pd-lg-4 mg-l-10"><i data-feather="plus"></i>Tulis Jawaban</button>
+                </nav>
+              </div><!-- card-footer -->
+            </div><!-- card -->
 
-        <div class="d-flex wd-lg-350">
-          <a href="https://themeforest.net/item/dashforge-responsive-admin-dashboard-template/23725961" class="btn btn-brand-01 btn-uppercase flex-fill">Buy Now - $20</a>
-          <a href="template/classic/dashboard-one.html" class="btn btn-white btn-uppercase flex-fill mg-l-10">Explore Demo</a>
-        </div>
 
-        <div class="d-flex tx-20 mg-t-40">
-          <div class="tx-purple"><i class="fab fa-bootstrap"></i></div>
-          <div class="tx-orange pd-l-10"><i class="fab fa-html5"></i></div>
-          <div class="tx-primary pd-l-10"><i class="fab fa-css3-alt"></i></div>
-          <div class="tx-pink pd-l-10"><i class="fab fa-sass"></i></div>
-          <div class="tx-warning pd-l-10"><i class="fab fa-js"></i></div>
-          <div class="tx-danger pd-l-10"><i class="fab fa-npm"></i></div>
-          <div class="tx-danger pd-l-10"><i class="fab fa-gulp"></i></div>
-          <div class="bd-l mg-l-10 mg-sm-l-20 pd-l-10 pd-sm-l-20"></div>
-          <div class="tx-color-03" data-toggle="tooltip" data-title="Ongoing development"><i class="fab fa-angular"></i></div>
-          <div class="tx-color-03 pd-l-10" data-toggle="tooltip" data-title="Coming soon"><i class="fab fa-react"></i></div>
-          <div class="tx-color-03 pd-l-10" data-toggle="tooltip" data-title="Coming soon"><i class="fab fa-vuejs"></i></div>
-        </div>
+            <div class="modal fade" id="modalBillingInfo" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered wd-sm-950" role="document">
+                <div class="modal-content">
+                  <div class="modal-header pd-y-10 pd-x-10 pd-sm-x-10">
+                    <a href="" role="button" class="close pos-absolute t-15 r-15" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </a>
+                    <div class="media align-items-center">
+                      <span class="tx-color-03 d-none d-sm-block"></span>
+                      <div class="media-body mg-sm-l-10">
+                        <h4 class="tx-18 tx-sm-20 mg-b-2">Tulis Jawaban</h4>
+                      </div>
+                    </div><!-- media -->
+                  </div><!-- modal-header -->
+                  <div class="modal-body pd-sm-t-30 pd-sm-b-40 pd-sm-x-30">
+                    <div class="form-group">
+                        <!-- <label class="tx-10 tx-uppercase tx-medium tx-spacing-1 mg-b-5 tx-color-03">Name on Card</label> -->
+                        <textarea id="summernote" name="content" ></textarea>
+                    </div>
+                  </div><!-- modal-body -->
+                  <div class="modal-footer pd-x-5 pd-y-5">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Save Info</button>
+                  </div>
+                </div><!-- modal-content -->
+              </div><!-- modal-dialog -->
+            </div><!-- modal -->
 
-        <div class="tx-12 mg-t-40">
-          <a href="docs.html" class="link-03">Doc<span class="d-none d-sm-inline">umentation</span><span class="d-sm-none">s</span></a>
-          <a href="changelog.html" class="link-03 mg-l-10 mg-sm-l-20">Changelog</a>
-          <a href="https://themeforest.net/licenses/standard" target="_blank" class="link-03 mg-l-10 mg-sm-l-20">Licenses</a>
-          <a href="https://themeforest.net/page/customer_refund_policy" target="_blank" class="link-03 mg-l-10 mg-sm-l-20">Refund Policy</a>
-        </div>
+
+            <div class="modal fade" id="modalBillingpertanyaan" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered wd-sm-950" role="document">
+                <div class="modal-content">
+                  <div class="modal-header pd-y-10 pd-x-10 pd-sm-x-10">
+                    <a href="" role="button" class="close pos-absolute t-15 r-15" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </a>
+                    <div class="media align-items-center">
+                      <span class="tx-color-03 d-none d-sm-block"></span>
+                      <div class="media-body mg-sm-l-10">
+                        <h4 class="tx-18 tx-sm-20 mg-b-2">Tulis Pertanyaan</h4>
+                      </div>
+                    </div><!-- media -->
+                  </div><!-- modal-header -->
+                  <div class="modal-body pd-sm-t-30 pd-sm-b-20 pd-sm-x-30">
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <label>Pilih Kategori</label>
+                          <select class="custom-select">
+                            <option value="">Pembangkit</option>
+                            <option value="">Transmisi</option>
+                            <option value="">Pendidikan</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <!-- <label for="inputAddress2">Address 2</label> -->
+                        <textarea type="text" rows="4" class="form-control" placeholder="Apartment, studio, or floor">
+                        </textarea>
+                        </div>
+                    </form>
+                  </div><!-- modal-body -->
+                  <div class="modal-footer pd-x-5 pd-y-5">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Save Info</button>
+                  </div>
+                </div><!-- modal-content -->
+              </div><!-- modal-dialog -->
+            </div><!-- modal -->
+
+
+          </div><!-- media-body -->
+        </div><!-- media -->
+      </div><!-- container -->
+    </div><!-- content -->
+
+    <footer class="footer">
+      <div>
+        <span>&copy; 2019 DashForge v1.0.0. </span>
+        <span>Created by <a href="http://themepixels.me">ThemePixels</a></span>
       </div>
-      <div class="home-slider-img">
-        <div><img src="assets/img/home-1.png" alt=""></div>
-        <div><img src="assets/img/home-2.png" alt=""></div>
-        <div><img src="assets/img/home-2.png" alt=""></div>
+      <div>
+        <nav class="nav">
+          <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
+          <a href="change-log.html" class="nav-link">Change Log</a>
+          <a href="https://discordapp.com/invite/RYqkVuw" class="nav-link">Get Help</a>
+        </nav>
       </div>
-      <div class="home-slider-bg-one"></div>
-    </div><!-- home-slider -->
+    </footer>
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -115,14 +338,53 @@
     <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
     <script src="assets/js/dashforge.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+    <!-- append theme customizer -->
+    <script src="lib/js-cookie/js.cookie.js"></script>
+    <script src="assets/js/dashforge.settings.js"></script>
+
     <script>
-      $(document).ready(function() {
-        'use strict'
+      $(function(){
+        'use script'
 
         $('[data-toggle="tooltip"]').tooltip()
 
+        window.darkMode = function(){
+          $('.btn-white').addClass('btn-dark').removeClass('btn-white');
+          $('.bg-white').addClass('bg-gray-900').removeClass('bg-white');
+          $('.bg-gray-50').addClass('bg-dark').removeClass('bg-gray-50');
+        }
 
+        window.lightMode = function() {
+          $('.btn-dark').addClass('btn-white').removeClass('btn-dark');
+          $('.bg-gray-900').addClass('bg-white').removeClass('bg-gray-900');
+          $('.bg-dark').addClass('bg-gray-50').removeClass('bg-dark');
+        }
+
+        var hasMode = Cookies.get('df-mode');
+        if(hasMode === 'dark') {
+          darkMode();
+        } else {
+          lightMode();
+        }
       });
+      $('#summernote').summernote({
+        placeholder: 'Hello Bootstrap 4',
+        tabsize: 2,
+        height: 100,
+        toolbar: [
+          ['font', ['bold', 'underline','Italic']],
+          ['insert', [ 'picture']]
+        ]
+      });
+       $(document).ready(function() {
+        $('#content').summernote({
+          height: "200px",
+          styleWithSpan: false,
+          
+        });
+      }); 
     </script>
   </body>
 </html>
