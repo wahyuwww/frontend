@@ -41,7 +41,7 @@ $(function(){
   // reply form
   var quill = new Quill('#editor-container', {
     modules: {
-      toolbar: '#toolbar-container'
+      toolbar: '#toolbar-container1'
     },
     placeholder: 'Silahkan ketik...',
     theme: 'snow'
